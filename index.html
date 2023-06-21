@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Header-->
+    <section class="header">
+        <div class="header-content">
+            <object class="logo" data="./images/logo.svg" width="100" height="200"> </object>
+            <div class="language">
+                <object data="./images/world.svg" width="25" height="20"> </object>
+                <!-- <span>AZ</span> -->
+                <!-- <object data="./images/arrow.svg" width="30" height="30" style="cursor: pointer;"> </object> -->
+                <select class="selectpicker" style="outline: none;border: none;" data-width="fit">
+                    <option data-content='<span class="flag-icon flag-icon-us"></span> AZ'>AZ</option>
+                    <option data-content='<span class="flag-icon flag-icon-mx"></span> RU'>RU</option>
+                    <option data-content='<span class="flag-icon flag-icon-mx"></span> EN'>EN</option>
+                </select>
+            </div>
+            <div class="menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="header-mobile">
+        <div class="header-mobile-content">
+            <div class="languages">
+                <button class="language selected">AZ</button>
+                <button class="language">EN</button>
+                <button class="language">RU</button>
+            </div>
+            <div class="links">
+                <a>Haqqımızda</a>
+                <a>Xidmətlərimiz</a>
+                <a>Paketlərimiz</a>
+                <a>Üstünlüklərimiz</a>
+                <a>Bizimlə əlaqə</a>
+            </div>
+            <div class="communication">
+                <div class="phone">
+                    <object data="./images/phone.svg" width="20" height="20"> </object>
+                    +994 (12) 310-01-01
+                </div>
+                <div class="mail">
+                    <object data="./images/mail.svg" width="20" height="20"> </object>
+                    sales@bossnet.az
+                </div>
+            </div>
+            <div class="sosial">
+                <div class="round">
+                    <object data="./images/twitter (1) 1.svg" width="20" height="20"> </object>
+                </div>
+                <div class="round">
+                    <object data="./images/instagram (2) 1.svg" width="20" height="20"> </object>
+                </div>
+                <div class="round">
+                    <object data="./images/facebook (2) 1.svg" width="20" height="20"> </object>
+                </div>
+                <div class="round">
+                    <object data="./images/linkedin (1) 1.svg" width="20" height="20"> </object>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Links-->
+    <section class="buttons">
+        <div class="buttons-content">
+            <a href="#about">Haqqımızda</a>
+            <a href="#services">Xidmətlərimiz</a>
+            <a href="#packet">Paketlərimiz</a>
+            <a href="#why">Üstünlüklərimiz</a>
+            <a href="#contact">Bizimlə əlaqə</a>
+        </div>
+    </section>
+
+    <!--Carousel-->
+    <section class="carousel">
+        <div class="carousel-content">
+            <div id="carouselExampleIndicators" style="width: 100%;" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-inner-item">
+                            <h1>Join us Lorem ipsum
+                                amet consectetur adipiscing</h1>
+                            <img src="images/carousel.png" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-inner-item">
+                            <h1>Join us Lorem ipsum
+                                amet consectetur adipiscing</h1>
+                            <img src="images/carousel.png" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-inner-item">
+                            <h1>Join us Lorem ipsum
+                                amet consectetur adipiscing</h1>
+                            <img src="images/carousel.png" />
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About-->
+    <section id="about">
+        <div class="about-content">
+            <h1 class="section_header">Haqqımızda</h1>
+            <h6>Pharetra sit amet aliquam id diam maecenas. At tempor commodo ullamcorper a lacus vestibulum sed. Leo
+                urna
+                molestie at elementum eu facilisis sed odio. Sollicitudin ac orci phasellus egestas tellus rutrum tellus
+                pellentesque. Tellus molestie nunc non blandit massa. Sit amet facilisis magna etiam tempor. Ultricies
+                leo
+                integer malesuada nunc vel risus commodo viverra. Quis viverra nibh cras pulvinar mattis nunc sed. Arcu
+                bibendum
+                at varius vel. Sed faucibus turpis in eu mi bibendum neque. Sodales neque sodales ut etiam sit amet
+                nisl.</h6>
+        </div>
+    </section>
+
+    <!--Services-->
+    <section id="services">
+        <div class="services-content">
+            <h1 class="section_header">Xidmətlərimiz</h1>
+            <div class="boxes">
+                <div class="box">
+                    <object style="margin-bottom: 10px;" class="logo" data="./images/tv.svg" width="30" height="30">
+                    </object>
+                    <h3>IP TV</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sunt id tempore.</p>
+                </div>
+                <div class="seperator"></div>
+                <div class="box">
+                    <object style="margin-bottom: 10px;" class="logo" data="images/cabel.svg" width="30" height="30">
+                    </object>
+                    <h3>Kabel Televiziyası</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="seperator"></div>
+                <div class="box">
+                    <object style="margin-bottom: 10px;" class="logo" data="images/wifi.svg" width="30" height="30">
+                    </object>
+                    <h3>İnternet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="seperator"></div>
+                <div class="box">
+                    <object style="margin-bottom: 10px;" class="logo" data="images/tel.svg" width="30" height="30">
+                    </object>
+                    <h3>IP Telefoniya (SIP)</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Paketler-->
+    <section id="packet">
+        <div class="packet-content">
+            <h1 class="section_header">TV və internet paketləri</h1>
+
+            <div class="items">
+                <div class="item1">
+                    <h5 class="header-text">İnternet</h5>
+                    <div class="mb">
+                        <object class="logo" data="./images/mb.svg" width="100" height="100"></object>
+                        <div class="center">
+                            <h2>50</h2>
+                            <h4>mb/s</h4>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="fiber">
+                            <img src="images/ok.svg" alt="">
+                            <h6>Fiber optik</h6>
+                        </div>
+                        <div class="wifi">
+                            <img src="images/ok.svg" alt="">
+                            <h6>PULSUZ Wi-fi router</h6>
+                        </div>
+                    </div>
+                    <div class="number">
+                        <p>17</p>
+                        <p class="num">,99</p>
+                        <img src="images/₼.svg" alt="">
+                    </div>
+                    <h5 class="month">/ayda</h5>
+                </div>
+                <div class="item2 middle-item">
+                    <h5 class="header-text">İnternet + Rəqəmsal TV</h5>
+
+                    <div class="mb">
+                        <object class="logo" data="./images/mb.svg" width="100" height="100"></object>
+                        <div class="center">
+                            <h2>50</h2>
+                            <h4>mb/s</h4>
+                        </div>
+                    </div>
+
+                    <div class="comments">
+                        <div class="fiber">
+                            <img src="images/ok.svg" alt="">
+                            <h6>Fiber optik</h6>
+                        </div>
+                        <div class="wifi">
+                            <img src="images/ok.svg" alt="">
+                            <h6>PULSUZ Wi-fi router</h6>
+                        </div>
+                        <div class="channel">
+                            <img src="images/tik.svg" alt="">
+                            <h6>200+ kanal</h6>
+                        </div>
+                    </div>
+                    <div class="number">
+                        <p>26</p>
+                        <p class="num">,99</p>
+                        <img src="images/₼.svg" alt="">
+                    </div>
+                    <h5 class="month">/ayda</h5>
+                </div>
+                <div class="item3">
+                    <h5 class="header-text">İnternet + TV + elefon xətti</h5>
+
+                    <div class="mb">
+                        <object class="logo" data="./images/mb.svg" width="100" height="100"></object>
+                        <div class="center">
+                            <h2>50</h2>
+                            <h4>mb/s</h4>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="fiber">
+                            <img src="images/ok.svg" alt="">
+                            <h6>Fiber optik</h6>
+                        </div>
+                        <div class="wifi">
+                            <img src="images/ok.svg" alt="">
+                            <h6>PULSUZ Wi-fi router</h6>
+                        </div>
+                        <div class="channel">
+                            <img src="images/tik.svg" alt="">
+                            <h6>200+ kanal</h6>
+                        </div>
+                    </div>
+                    <div class="number">
+                        <p>29</p>
+                        <p class="num">,99</p>
+                        <img src="images/₼.svg" alt="">
+                    </div>
+                    <h5 class="month">/ayda</h5>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--Sirketler ucun-->
+    <section id="company">
+        <div class="company-content">
+            <h1 class="section_header">Şirkətlər üçün</h1>
+            <span class="section_content">Korporativ müştərilərə yerləşdikləri ərazidən asılı olaraq fərqli
+                texnologiyadan (FO, Radio Relay)
+                istifadə etməklə şirkətinizin tələblərinə uyğun yüksək sürətli internet, İP telefoniya (SİP), İPTV,
+                məlumatların ötürülməsi (VPN) və digər telekommunikasiya xidmətləri təklif olunur.</span>
+            <div class="go display-none">
+                <object data="./images/go.svg" width="20" height="20"> </object>
+                <span>Bizə yazın</span>
+            </div>
+        </div>
+    </section>
+
+    <!--Why we-->
+    <section id="why">
+        <div class="why-content">
+            <h1 class="section_header">Niyə biz? <br /> Üstünlüklərimiz!</h1>
+
+            <div class="content">
+                <div class="item1">
+                    <img src="images/export.svg" alt="">
+                    <h3>Ən Reytinqli Kanallar</h3>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</h6>
+                </div>
+                <div class="item2">
+                    <img src="images/suretli.svg" alt="">
+                    <h3>Sürətli Bağlantı</span>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</h6>
+                </div>
+                <div class="item3">
+                    <img src="images/enyaxsi.svg" alt="">
+                    <h3>Ən Yaxşı Qiymət Planları</span>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</h6>
+                </div>
+                <div class="item4">
+                    <img src="images/keyfiyyetli.svg" alt="">
+                    <h3>Təcrübəli personal</span>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</h6>
+                </div>
+                <div class="item5">
+                    <img src="images/destek.svg" alt="">
+                    <h3>24/7 Dəstək</span>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</h6>
+                </div>
+                <div class="item6">
+                    <img src="images/tecrubeli.svg" alt="">
+                    <h3>Keyfiyyətli xidmət</span>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--contact-->
+    <section id="contact">
+        <h1 class="section_header">Bizə yazın</h1>
+        <div class="contact-header">
+            <span class="contact-header-text">Bakının müxtəlif yerlərində sizə yaxın olan filialımız ilə tanış olun
+                👇</span>
+            <div class="contact-header-buttons">
+                <button id="person" class="contact-header-button selected">Fiziki şəxs</button>
+                <button id="corperative" class="contact-header-button">Korporativ</button>
+            </div>
+        </div>
+        <div class="contact-body">
+            <div class="contact-body-form">
+                <input class="contact-body-form-input" placeholder="Başlıq" />
+                <input id="company_input" class="contact-body-form-input display-none" placeholder="Şirkətin adı" />
+                <div class="input-container">
+                    <input class="contact-body-form-input" placeholder="Ad" />
+                    <input class="contact-body-form-input" placeholder="Soyad" />
+                </div>
+                <div class="input-container">
+                    <input type="email" class="contact-body-form-input" placeholder="Email" />
+                    <input class="contact-body-form-input" placeholder="Telefon" />
+                </div>
+                <textarea rows="4" cols="38" placeholder="Mətn"></textarea>
+                <button class="send">Göndər</button>
+            </div>
+            <div class="contact-body-map">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="770" height="323" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=40.441, 49.925&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 100%;
+                                width: 100%;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 100%;
+                                width: 100%;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <object class="address" data="./images/address.svg" width="600" height="200"> </object>
+            </div>
+        </div>
+    </section>
+
+    <!--Sticky elements-->
+    <section class="sticky-elements">
+        <div class="round">
+            <img src="./images/messenger.svg" />
+        </div>
+        <div class="round">
+            <img src="./images/whatsapp.svg" />
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <section class="footer">
+        <div class="up">
+            <a href="#"><img src="images/footer-arrow.svg" alt=""></a>
+        </div>
+        <div class="footer-content">
+            <object class="logo" data="./images/logo.svg" width="100" height="200"> </object>
+            <div class="sosial">
+                <div class="item">
+                    <object data="./images/twitter (1) 1.svg" width="20" height="20"> </object>
+                </div>
+                <div class="item">
+                    <object data="./images/instagram (2) 1.svg" width="20" height="20"> </object>
+                </div>
+                <div class="item">
+                    <object data="./images/facebook (2) 1.svg" width="20" height="20"> </object>
+                </div>
+                <div class="item">
+                    <object data="./images/linkedin (1) 1.svg" width="20" height="20"> </object>
+                </div>
+            </div>
+        </div>
+        <div class="seperator"></div>
+        <div class="footer-info">
+            <span>Copyright © 2023 Boss Group MMC. All Rights Reserved.</span>
+            <div class="phone_mail">
+                <div class="phone">
+                    <object data="./images/phone.svg" width="20" height="20"> </object>
+                    +994 (12) 310-01-01
+                </div>
+                <div class="mail">
+                    <object data="./images/mail.svg" width="20" height="20"> </object>
+                    sales@bossnet.az
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
